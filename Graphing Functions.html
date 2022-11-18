@@ -404,7 +404,49 @@ The function is <b> positive </b>.<div class="sd-summary-down docutils">
 <p class="sd-card-text">For a given <span class="math notranslate nohighlight">\(x\)</span> , <span class="math notranslate nohighlight">\(f(x) &gt; 0\)</span>. aka the value of the function, at that point, is a positive number.</p>
 <p class="sd-card-text">Similarly, if the function is <b> negative </b>, the function is a negative number. (For a given <span class="math notranslate nohighlight">\(x\)</span> , <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span>.</p>
 </div>
-</details></section>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+The function is <b> increasing </b>.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">For a given interval, as <span class="math notranslate nohighlight">\(x\)</span> increases (gets bigger), <span class="math notranslate nohighlight">\(f(x)\)</span> also increases (gets bigger). “climbing uphill”</p>
+<p class="sd-card-text">Similarly, if the function is <b> decreasing </b>, as <span class="math notranslate nohighlight">\(x\)</span> increases (gets bigger), <span class="math notranslate nohighlight">\(f(x)\)</span> decreases (gets smaller). “going downhill”</p>
+</div>
+</details><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that we define positive/negative for the function at a give point (<span class="math notranslate nohighlight">\(x\)</span>). Whereas we define increasing/decreasing for the function on a given interval ([<span class="math notranslate nohighlight">\(x_1,x_2\)</span>])</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mf">.01</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mf">.25</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mi">6</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;some numbers&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/Graphing Functions_7_0.png" src="_images/Graphing Functions_7_0.png" />
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
